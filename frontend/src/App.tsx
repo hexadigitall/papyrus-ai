@@ -2,8 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Toaster } from 'react-hot-toast';
-import HomePage from './pages/HomePage';
-import EditorPage from './pages/EditorPage';
+import { HomePage, EditorPage } from './pages';
 import './index.css';
 
 const queryClient = new QueryClient({
