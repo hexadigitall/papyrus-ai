@@ -1,0 +1,20 @@
+{
+  "name": "papyrus-ai",
+  "version": "1.0.0",
+  "description": "AI-powered markup to PDF converter with intelligent content enhancement",
+  "main": "backend/server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\"",
+    "backend:dev": "cd backend && nodemon server.js",
+    "frontend:dev": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && node server.js",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": ["pdf", "markdown", "ai", "document-generation", "content-enhancement", "papyrus"],
+  "author": "Hexadigitall - hexadigitall.com",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
